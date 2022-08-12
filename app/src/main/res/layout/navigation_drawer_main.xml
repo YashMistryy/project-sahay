@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/VeryLightgray">
+<ImageView
+    android:id="@+id/userprofile"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:onClick="ClosrDrawer"
+    android:src="@drawable/profile_img_nav"
+    android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userprofile"
+        android:layout_centerHorizontal="true"
+        android:text="USER"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tvusername"
+        android:layout_marginTop="20dp"
+        android:background="@color/black"
+        android:layout_marginHorizontal="40dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_line"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+       <TextView
+           android:id="@+id/categories_drawer"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Categories"
+           style="@style/black_text_23dp"
+           android:drawableLeft="@drawable/category_img"
+           android:gravity="center_vertical"
+           android:layout_marginLeft="13dp"
+           android:layout_marginVertical="12dp"
+
+           android:drawablePadding="13dp"
+           />
+
+        <TextView
+            android:id="@+id/orders_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Orders"
+            style="@style/black_text_23dp"
+            android:drawableLeft="@drawable/orders"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="13dp"
+            android:layout_marginVertical="12dp"
+            android:drawablePadding="13dp"
+            />
+
+        <TextView
+            android:id="@+id/settings_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            style="@style/black_text_23dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="13dp"
+            android:layout_marginVertical="12dp"
+            android:drawablePadding="13dp"
+            android:drawableLeft="@drawable/settings_img"/>
+
+        <TextView
+            android:id="@+id/logout_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            style="@style/black_text_23dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="13dp"
+            android:layout_marginVertical="12dp"
+            android:drawablePadding="13dp"
+            android:drawableLeft="@drawable/logout_buttton"/>
+    </LinearLayout>
+
+</RelativeLayout>

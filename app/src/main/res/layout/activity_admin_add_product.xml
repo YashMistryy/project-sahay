@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminAddProductActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@color/VeryLightgray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvCategoryDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="category"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_input"
+        android:layout_width="300dp"
+        android:layout_height="300sp"
+        android:src="@drawable/image_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3" />
+
+    <EditText
+        android:id="@+id/etInputName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/custom_edititext"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:gravity="center_horizontal"
+        android:hint="Product Name"
+        android:inputType="text"
+        android:maxLength="15"
+        android:padding="5dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_input" />
+
+    <EditText
+        android:id="@+id/etInputPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/custom_edititext"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:gravity="center_horizontal"
+        android:hint="Product Price"
+        android:inputType="number"
+        android:maxLength="15"
+        android:padding="5dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etInputName" />
+
+    <EditText
+        android:id="@+id/etInputUnit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/custom_edititext"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:gravity="center_horizontal"
+        android:hint="Product Unit"
+        android:inputType="text"
+        android:maxLength="15"
+        android:padding="5dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etInputPrice" />
+
+    <EditText
+        android:id="@+id/etInputDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/custom_edititext"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:gravity="center_horizontal"
+        android:hint="Product Description"
+        android:inputType="text"
+        android:maxLength="150"
+        android:padding="5dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etInputUnit" />
+
+    <Button
+        android:id="@+id/btnAddProd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00C853"
+        android:text="Add item"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etInputDesc" />
+</androidx.constraintlayout.widget.ConstraintLayout>

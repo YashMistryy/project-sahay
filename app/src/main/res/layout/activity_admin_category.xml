@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminCategoryActivity"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/slogan_category_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="serif-monospace"
+        android:text="Add Product"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<!--ll1-->
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slogan_category_admin">
+
+        <ImageView
+            android:id="@+id/electrical_category"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/electrical_category_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="electrical"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            style="@style/black_text"/>
+    </LinearLayout>
+<!--ll2-->
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ll1"
+        app:layout_constraintTop_toBottomOf="@+id/slogan_category_admin">
+
+        <ImageView
+            android:id="@+id/automobile_category"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/automobile_category_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Automobile"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            style="@style/black_text"/>
+    </LinearLayout>
+<!--    ll3-->
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll2">
+
+        <ImageView
+            android:id="@+id/masonry_category"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/masonry_category_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masonry"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            style="@style/black_text"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ll3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ll3"
+        app:layout_constraintTop_toBottomOf="@+id/ll1">
+
+        <ImageView
+            android:id="@+id/plumbing_category"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/plumbing_category_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plumbing"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            style="@style/black_text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll5"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll3">
+
+        <ImageView
+            android:id="@+id/gardening_category"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/gardening_category_img" />
+
+        <TextView
+            style="@style/black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gardening"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll6"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll4"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/carpentry_category"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/carpentry_category_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carpentry"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            style="@style/black_text"/>
+    </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
